@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Downloader</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family:Arial;text-align:center;padding:40px">
+
+<h2>Video Downloader</h2>
+
+<input id="url" placeholder="Paste link video" style="width:80%;padding:10px">
+<br><br>
+<button onclick="go()">Download</button>
+
+<script>
+function go(){
+  const url = document.getElementById("url").value;
+  window.location = "/download?url=" + encodeURIComponent(url);
+}
+</script>
+
+</body>
+</html>
